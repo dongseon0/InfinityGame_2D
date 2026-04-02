@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [Header("계단")]
     [Space(10)]
     public GameObject[] Stairs;
+    public bool[] isTurn;
 
     private enum State {Start, Left, Right};
     private State state;
@@ -27,6 +28,13 @@ public class GameManager : MonoBehaviour
     {
         state = State.Start;
         oldPosition = Vector3.zero;
+        isTurn = new bool[Stairs.Length];
+
+        for(int i = 0; i < Stairs.Length; i++)
+        {
+            Stairs[i].transform.position = Vector3.zero;
+            isTurn[i] = false;
+        }
     }
 
     private void InitStairs()
@@ -42,10 +50,12 @@ public class GameManager : MonoBehaviour
                 
                 case State.Left:
                     Stairs[i].transform.position = oldPosition + new Vector3(-0.75f, 0.5f, 0);
+                    isTurn[i] = true;
                     break;
                 
                 case State.Right:
                     Stairs[i].transform.position = oldPosition + new Vector3(0.75f, 0.5f, 0);
+                    isTurn[i] = false;
                     break;
             }
 

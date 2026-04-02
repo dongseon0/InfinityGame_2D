@@ -24,10 +24,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(1))
+        if(Input.GetMouseButtonDown(1))
         {
             CharTurn();
-        } else if (Input.GetMouseButton(0))
+        } else if (Input.GetMouseButtonDown(0))
         {
             CharMove();
         }
