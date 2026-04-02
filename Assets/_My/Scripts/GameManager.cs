@@ -45,11 +45,23 @@ public class GameManager : MonoBehaviour
                     break;
                 
                 case State.Right:
-                    Stairs[i].transform.position = oldPosition + new Vector3(0.75f, -0.1f, 0);
+                    Stairs[i].transform.position = oldPosition + new Vector3(0.75f, 0.5f, 0);
                     break;
             }
 
             oldPosition = Stairs[i].transform.position;
+
+            if(i != 0)
+            {
+                int ran = Random.Range(0, 5);
+
+                if(ran < 2 && i < Stairs.Length -1)
+                {
+                    state = state == State.Left ? State.Right : State.Left;
+                }
+            }
+
+
         }
     }
 }

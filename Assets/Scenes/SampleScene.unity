@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc8fe609aec84075b5de71bf229d371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stairs: []
 --- !u!4 &539737318
 Transform:
   m_ObjectHideFlags: 0
@@ -1454,8 +1455,9 @@ GameObject:
   - component: {fileID: 619426959}
   - component: {fileID: 619426958}
   - component: {fileID: 619426957}
+  - component: {fileID: 619426960}
   m_Layer: 0
-  m_Name: char
+  m_Name: Char
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1554,6 +1556,18 @@ Transform:
   - {fileID: 519420032}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &619426960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619426956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7631b21355ed14fb2b7a2e4aa6d423f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &654243265
 GameObject:
   m_ObjectHideFlags: 0
