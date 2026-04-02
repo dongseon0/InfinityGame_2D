@@ -1210,7 +1210,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc8fe609aec84075b5de71bf229d371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stairs: []
+  Stairs:
+  - {fileID: 1349446698}
+  - {fileID: 2096249322}
+  - {fileID: 918121057}
+  - {fileID: 442027374}
+  - {fileID: 48618148}
+  - {fileID: 1176601624}
+  - {fileID: 675316141}
+  - {fileID: 472941236}
+  - {fileID: 1295066670}
+  - {fileID: 1526107938}
+  - {fileID: 69606491}
+  - {fileID: 654243265}
+  - {fileID: 474051104}
+  - {fileID: 1986334064}
+  - {fileID: 574625602}
+  - {fileID: 1812644328}
+  - {fileID: 1400321843}
+  - {fileID: 1053640597}
+  - {fileID: 905932644}
+  - {fileID: 217474699}
+  - {fileID: 1192577103}
 --- !u!4 &539737318
 Transform:
   m_ObjectHideFlags: 0
